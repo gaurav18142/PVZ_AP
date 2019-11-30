@@ -75,7 +75,6 @@ public class GamePlay
             s.step();
         } 
         zt.setProgress(zt.getProgress()+(1/50000.0));
-        
         for (plant pl:plants) 
         {
             pl.move();
@@ -148,7 +147,6 @@ public class GamePlay
                          double peaX=pea.getX();
                          if(prow==peaRow && peaRow==zrow && (-1*pea.getX()+zombie.getX())<=20 && zombie.getX()<1200)
                          {
-                             System.out.println("d");
                              pea.removeImage();
                              zombie.setHealth(zombie.getHealth()-pl.getDamage());
                              i4.remove();

@@ -12,7 +12,7 @@ class Wallnut extends plant
     transient private ImageView pimgv;
     public Wallnut(int row,int column,Group g,double X,double Y)
     {
-        super(50,row,column,X,Y,50000,0,"Wallnut");
+        super(50,row,column,X,Y,500000,0,"Wallnut");
         this.g=g;
         timer=0;
         s=new StackPane();

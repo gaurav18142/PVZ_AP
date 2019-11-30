@@ -12,7 +12,7 @@ public class Peashooter extends plant
     Player p;
     public Peashooter(int row,int column,Group g,double X,double Y,Player p)
     {
-        super(100,row,column,X,Y,200000,80,"peashooter");
+        super(100,row,column,X,Y,200000,100,"peashooter");
         this.g=g;
         timer=900;
         s=new StackPane();

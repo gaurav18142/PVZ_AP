@@ -21,11 +21,11 @@ public class ZombieWave implements Serializable
     {
         if(level>=1)
         {
-            Normal n1=new Normal(3,14,g,1500.0,500.0);
-            Normal n2=new Normal(3,14,g,2100.0,500.0);
-            Normal n3=new Normal(3,14,g,2700.0,500.0);
-            Cone c1=new Cone(3,14,g,3300.0,500.0);
-            Cone c2=new Cone(3,14,g,3900.0,500.0);
+            Zombie n1=new Normal(3,14,g,1500.0,500.0);
+            Zombie n2=new Normal(3,14,g,2100.0,500.0);
+            Zombie n3=new Normal(3,14,g,2700.0,500.0);
+            Zombie c1=new Cone(3,14,g,3300.0,500.0);
+            Zombie c2=new Cone(3,14,g,3900.0,500.0);
             wave.add(n1);
             wave.add(n2);
             wave.add(n3);
@@ -34,16 +34,16 @@ public class ZombieWave implements Serializable
         }
         if(level>1)
         {
-            Normal n11=new Normal(2,14,g,1500,325);
-            Normal n22=new Normal(2,14,g,2100,325);
-            Normal n33=new Normal(2,14,g,2700,325);
-            Cone c11=new Cone(2,14,g,3300,325);
-            Cone c22=new Cone(2,14,g,3900.0,325.0);
-            Normal n111=new Normal(4,14,g,1500,700);
-            Normal n222=new Normal(4,14,g,2100,700);
-            Normal n333=new Normal(4,14,g,2700,700);
-            Cone c111=new Cone(4,14,g,3300,700);
-            Cone c222=new Cone(4,14,g,3900.0,700.0);
+            Zombie n11=new Normal(2,14,g,1500,325);
+            Zombie n22=new Normal(2,14,g,2100,325);
+            Zombie n33=new Normal(2,14,g,2700,325);
+            Zombie c11=new Cone(2,14,g,3300,325);
+            Zombie c22=new Cone(2,14,g,3900.0,325.0);
+            Zombie n111=new Normal(4,14,g,1500,700);
+            Zombie n222=new Normal(4,14,g,2100,700);
+            Zombie n333=new Normal(4,14,g,2700,700);
+            Zombie c111=new Cone(4,14,g,3300,700);
+            Zombie c222=new Cone(4,14,g,3900.0,700.0);
             wave.add(n11);
             wave.add(n22);
             wave.add(n33);
@@ -57,16 +57,16 @@ public class ZombieWave implements Serializable
         }
         if(level<=5 && level>3)
         {
-            Normal n11=new Normal(1,14,g,1500,175);
-            Normal n22=new Normal(1,14,g,2100,175);
-            Normal n33=new Normal(1,14,g,2700,175);
-            Cone c11=new Cone(1,14,g,3300,175);
-            Cone c22=new Cone(1,14,g,3900.0,175.0);
-            Normal n111=new Normal(5,14,g,1500,875);
-            Normal n222=new Normal(5,14,g,2100,875);
-            Normal n333=new Normal(5,14,g,2700,875);
-            Cone c111=new Cone(5,14,g,3300,875);
-            Cone c222=new Cone(5,14,g,3900.0,875);
+            Zombie n11=new Normal(1,14,g,1500,175);
+            Zombie n22=new Normal(1,14,g,2100,175);
+            Zombie n33=new Normal(1,14,g,2700,175);
+            Zombie c11=new Cone(1,14,g,3300,175);
+            Zombie c22=new Cone(1,14,g,3900.0,175.0);
+            Zombie n111=new Normal(5,14,g,1500,875);
+            Zombie n222=new Normal(5,14,g,2100,875);
+            Zombie n333=new Normal(5,14,g,2700,875);
+            Zombie c111=new Cone(5,14,g,3300,875);
+            Zombie c222=new Cone(5,14,g,3900.0,875);
             wave.add(n11);
             wave.add(n22);
             wave.add(n33);

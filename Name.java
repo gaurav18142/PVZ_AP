@@ -60,7 +60,7 @@ public class Name extends Application
     }
     public Scene genScene()
     {
-        title.setFont(Font.font("Verdana",125));
+        title.setFont(Font.font("Verdana",85));
         title.setFill(Color.RED);
         b.setFont(Font.font("Verdana", FontWeight.BOLD, 30));
         imgv.setImage(mainscreen);
@@ -77,7 +77,7 @@ public class Name extends Application
         r.setLayoutX(730);
         r.setLayoutY(400);
         title.setLayoutX(580);
-        title.setLayoutY(280);
+        title.setLayoutY(380);
         r.setPrefWidth(350);
         r.setPrefHeight(160);
         g.getChildren().addAll(imgv,p1,r,title);

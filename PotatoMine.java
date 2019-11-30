@@ -11,7 +11,7 @@ class PotatoMine extends plant
     transient private ImageView pimgv;
     public PotatoMine(int row,int column,Group g,double X,double Y)
     {
-        super(50,row,column,X,Y,50000,0,"PotatoMine");
+        super(25,row,column,X,Y,50000,0,"PotatoMine");
         this.g=g;
         timer=0;
         s=new StackPane();
