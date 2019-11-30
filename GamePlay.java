@@ -9,7 +9,6 @@ import javafx.scene.layout.*;
 import javafx.scene.control.*;
 public class GamePlay
 {
-    final private double FRAMES_PER_SECOND = 60.0;
     private Player p;
     private boolean zomvictory;
     private boolean planvictory;
