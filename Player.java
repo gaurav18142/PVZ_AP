@@ -20,7 +20,7 @@ public class Player implements Serializable
     public Player(String name,int level,Group g)
     {
         this.g=g;
-        sun=2000;
+        sun=500;
         this.name=name;
         this.level=level;
     }

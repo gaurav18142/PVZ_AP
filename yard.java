@@ -198,7 +198,6 @@ public class yard extends Application
         Slot3.setId("wallnut");
         Slot4.setId("potatoMine");
         Slot5.setId("freeze");
-        IntegerProperty seconds = new SimpleIntegerProperty();
         imgv.setImage(mainscreen);
         imgv1.setImage(sidebar);
         imgv2.setImage(peacard);

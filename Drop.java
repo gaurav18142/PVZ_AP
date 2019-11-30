@@ -128,7 +128,7 @@ public class Drop implements EventHandler<DragEvent>
                                 }
                         break;
                         case "sunflower":
-                                if(p.getSun()>=100)
+                                if(p.getSun()>=50)
                                 {
                                     plant s=new Sunflower(row,column,g,X,Y,p);
                                     p.addPlant(s);
@@ -136,7 +136,7 @@ public class Drop implements EventHandler<DragEvent>
                                 }
                         break;
                         case "wallnut":
-                                if(p.getSun()>=100)
+                                if(p.getSun()>=50)
                                 {
                                     plant w=new Wallnut(row,column,g,X,Y);
                                     p.addPlant(w);
@@ -144,7 +144,7 @@ public class Drop implements EventHandler<DragEvent>
                                 }
                         break;
                         case "potatoMine":
-                                if(p.getSun()>=100)
+                                if(p.getSun()>=25)
                                 {
                                     plant pm=new PotatoMine(row,column,g,X,Y);
                                     p.addPlant(pm);
@@ -152,7 +152,7 @@ public class Drop implements EventHandler<DragEvent>
                                 }
                         break;
                         case "freeze":
-                                if(p.getSun()>=100)
+                                if(p.getSun()>=175)
                                 {
                                     plant fp=new FreezePeashooter(row,column,g,X,Y,p);
                                     p.addPlant(fp);
