@@ -1,6 +1,5 @@
 import javafx.scene.Group;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
+import javafx.scene.image.*;
 import java.io.*;
 import javafx.scene.layout.StackPane;
 class LawnMover implements Serializable

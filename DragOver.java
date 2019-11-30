@@ -1,6 +1,5 @@
 import javafx.event.EventHandler;
-import javafx.scene.input.DragEvent;
-import javafx.scene.input.TransferMode;
+import javafx.scene.input.*;
 public class DragOver implements EventHandler<DragEvent> 
 {
     @Override

@@ -1,11 +1,8 @@
 import javafx.application.Platform;
-import javafx.event.EventHandler;
-import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import java.util.*;
 import java.io.*;
 import javafx.scene.*;
-import javafx.scene.layout.*;
 import javafx.scene.control.*;
 public class GamePlay
 {
