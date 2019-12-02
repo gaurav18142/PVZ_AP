@@ -38,7 +38,7 @@ public class LoadGame extends Application
             public void handle(ActionEvent e) 
             {          
                FileChooser f=new FileChooser();
-               File defaultDirectory = new File("D:/AP_Deadline_3/Profiles");
+               File defaultDirectory = new File("Profiles");
                f.setInitialDirectory(defaultDirectory);
                FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("TXT files (*.txt)", "*.txt");
                f.getExtensionFilters().add(extFilter);
