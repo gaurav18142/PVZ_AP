@@ -1,15 +1,27 @@
 import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.input.DragEvent;
+import javafx.animation.*;
+import javafx.util.Duration;
 import javafx.scene.layout.StackPane;
 public class Drop implements EventHandler<DragEvent> 
 {
     Group g;
     Player p;
-    public Drop(Group g,Player p)
+    StackPane s1;
+    StackPane s2;
+    StackPane s3;
+    StackPane s4;
+    StackPane s5;
+    public Drop(Group g,Player p,StackPane s1,StackPane s2,StackPane s3,StackPane s4,StackPane s5)
     {
         this.g=g;
         this.p=p;
+        this.s1=s1;
+        this.s2=s2;
+        this.s3=s3;
+        this.s4=s4;
+        this.s5=s5;
     }
     public void handle(DragEvent event) 
     {
@@ -122,6 +134,14 @@ public class Drop implements EventHandler<DragEvent>
                         case "peashooter":
                                 if(p.getSun()>=100)
                                 {
+                                    s1.setVisible(false);
+                                    PauseTransition pt = new PauseTransition(Duration.seconds(5));
+                                    pt.setOnFinished(e -> 
+                                    {
+                                        s1.setVisible(true);
+                                    }
+                                    );
+                                    pt.play();
                                     plant ps=new Peashooter(row,column,g,X,Y,p);
                                     p.addPlant(ps);
                                     p.setSun(p.getSun()-ps.getCost());
@@ -130,6 +150,14 @@ public class Drop implements EventHandler<DragEvent>
                         case "sunflower":
                                 if(p.getSun()>=50)
                                 {
+                                    s2.setVisible(false);
+                                    PauseTransition pt = new PauseTransition(Duration.seconds(5));
+                                    pt.setOnFinished(e -> 
+                                    {
+                                        s2.setVisible(true);
+                                    }
+                                    );
+                                    pt.play();
                                     plant s=new Sunflower(row,column,g,X,Y,p);
                                     p.addPlant(s);
                                     p.setSun(p.getSun()-s.getCost());
@@ -138,6 +166,14 @@ public class Drop implements EventHandler<DragEvent>
                         case "wallnut":
                                 if(p.getSun()>=50)
                                 {
+                                    s3.setVisible(false);
+                                    PauseTransition pt = new PauseTransition(Duration.seconds(5));
+                                    pt.setOnFinished(e -> 
+                                    {
+                                        s3.setVisible(true);
+                                    }
+                                    );
+                                    pt.play();
                                     plant w=new Wallnut(row,column,g,X,Y);
                                     p.addPlant(w);
                                     p.setSun(p.getSun()-w.getCost());
@@ -146,6 +182,14 @@ public class Drop implements EventHandler<DragEvent>
                         case "potatoMine":
                                 if(p.getSun()>=25)
                                 {
+                                    s4.setVisible(false);
+                                    PauseTransition pt = new PauseTransition(Duration.seconds(5));
+                                    pt.setOnFinished(e -> 
+                                    {
+                                        s4.setVisible(true);
+                                    }
+                                    );
+                                    pt.play();
                                     plant pm=new PotatoMine(row,column,g,X,Y);
                                     p.addPlant(pm);
                                     p.setSun(p.getSun()-pm.getCost());
@@ -154,6 +198,14 @@ public class Drop implements EventHandler<DragEvent>
                         case "freeze":
                                 if(p.getSun()>=175)
                                 {
+                                    s5.setVisible(false);
+                                    PauseTransition pt = new PauseTransition(Duration.seconds(5));
+                                    pt.setOnFinished(e -> 
+                                    {
+                                        s5.setVisible(true);
+                                    }
+                                    );
+                                    pt.play();
                                     plant fp=new FreezePeashooter(row,column,g,X,Y,p);
                                     p.addPlant(fp);
                                     p.setSun(p.getSun()-fp.getCost());

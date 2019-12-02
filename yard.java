@@ -163,7 +163,7 @@ public class yard extends Application
             }
         }
         s.setOnDragOver(new DragOver());
-        s.setOnDragDropped(new Drop(g,p));
+        s.setOnDragDropped(new Drop(g,p,Slot1,Slot2,Slot3,Slot4,Slot5));
         theStage.show();         
         GamePlay gp=new GamePlay(p,theStage,g,t);
         EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() 

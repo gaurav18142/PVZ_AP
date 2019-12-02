@@ -42,11 +42,13 @@ public class Start extends Application
             }
        });
         PauseTransition pt = new PauseTransition(Duration.seconds(15));
-                  pt.setOnFinished(e -> {
-                      delayedButton.setVisible(true);
-                      bar.setVisible(false);
-                  });
-                  pt.play();
+        pt.setOnFinished(e -> 
+        {
+            delayedButton.setVisible(true);
+            bar.setVisible(false);
+        }
+        );
+        pt.play();
         theStage.show();            
     }
     public Scene getScene()
