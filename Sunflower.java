@@ -37,7 +37,6 @@ public class Sunflower extends plant
         {
             timer=0;
             Sun s=new Sun(super.getRow(),super.getCol(),g,super.getX(),super.getY(),p);
-            p.setSun(p.getSun()+50);
         } 
         else 
         {
