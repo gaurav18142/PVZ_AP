@@ -60,7 +60,6 @@ public class GamePlay
             i=0;
             int sX=rand.nextInt((800-400)+1)+400;
             s=new Sun(0,0,g,sX,0,p);
-            p.setSun(p.getSun()+50);
         }
         else
         {
