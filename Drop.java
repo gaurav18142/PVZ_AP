@@ -4,6 +4,7 @@ import javafx.scene.input.DragEvent;
 import javafx.animation.*;
 import javafx.util.Duration;
 import javafx.scene.layout.StackPane;
+import javafx.scene.image.*;
 public class Drop implements EventHandler<DragEvent> 
 {
     Group g;
@@ -129,15 +130,47 @@ public class Drop implements EventHandler<DragEvent>
                 }
                 if (addX && addY && add) 
                 {
+                    StackPane d1=new StackPane();
+                    StackPane d2=new StackPane();
+                    StackPane d3=new StackPane();
+                    StackPane d4=new StackPane();
+                    StackPane d5=new StackPane();
+                    ImageView imgv6=new ImageView();
+                    ImageView imgv2=new ImageView();
+                    ImageView imgv3=new ImageView();
+                    ImageView imgv4=new ImageView();
+                    ImageView imgv5=new ImageView();
+                    Image peacard=new Image("card_peashooter_low.png",100,100,false,false );
+                    Image suncard=new Image("card_sunflower_low.png",100,100,false,false );
+                    Image nutcard=new Image("card_wallnut_low.png",100,100,false,false );
+                    Image bombcard=new Image("card_potato_low.png",100,100,false,false );
+                    Image freezecard=new Image("SnowButD.png",100,100,false,false );
+                    imgv2.setImage(peacard);
+                    imgv3.setImage(suncard);
+                    imgv4.setImage(nutcard);
+                    imgv5.setImage(bombcard);
+                    imgv6.setImage(freezecard);
+                    d1.getChildren().add(imgv2);
+                    d2.getChildren().add(imgv3);
+                    d3.getChildren().add(imgv4);
+                    d4.getChildren().add(imgv5);
+                    d5.getChildren().add(imgv6);
+                    d1.setLayoutX(150);
+                    d2.setLayoutX(250);
+                    d3.setLayoutX(350);
+                    d4.setLayoutX(450);
+                    d5.setLayoutX(550);
                     switch(Name) 
                     {
                         case "peashooter":
                                 if(p.getSun()>=100)
                                 {
+                                    g.getChildren().add(d1);
                                     s1.setVisible(false);
-                                    PauseTransition pt = new PauseTransition(Duration.seconds(5));
+                                    PauseTransition pt = new PauseTransition(Duration.seconds(7));
                                     pt.setOnFinished(e -> 
                                     {
+                                        d1.setVisible(false);
                                         s1.setVisible(true);
                                     }
                                     );
@@ -151,10 +184,12 @@ public class Drop implements EventHandler<DragEvent>
                                 if(p.getSun()>=50)
                                 {
                                     s2.setVisible(false);
+                                    g.getChildren().add(d2);
                                     PauseTransition pt = new PauseTransition(Duration.seconds(5));
                                     pt.setOnFinished(e -> 
                                     {
                                         s2.setVisible(true);
+                                        d2.setVisible(false);
                                     }
                                     );
                                     pt.play();
@@ -167,10 +202,12 @@ public class Drop implements EventHandler<DragEvent>
                                 if(p.getSun()>=50)
                                 {
                                     s3.setVisible(false);
-                                    PauseTransition pt = new PauseTransition(Duration.seconds(5));
+                                    g.getChildren().add(d3);
+                                    PauseTransition pt = new PauseTransition(Duration.seconds(10));
                                     pt.setOnFinished(e -> 
                                     {
                                         s3.setVisible(true);
+                                        d3.setVisible(false);
                                     }
                                     );
                                     pt.play();
@@ -183,10 +220,12 @@ public class Drop implements EventHandler<DragEvent>
                                 if(p.getSun()>=25)
                                 {
                                     s4.setVisible(false);
+                                    g.getChildren().add(d4);
                                     PauseTransition pt = new PauseTransition(Duration.seconds(5));
                                     pt.setOnFinished(e -> 
                                     {
                                         s4.setVisible(true);
+                                        d4.setVisible(false);
                                     }
                                     );
                                     pt.play();
@@ -199,10 +238,12 @@ public class Drop implements EventHandler<DragEvent>
                                 if(p.getSun()>=175)
                                 {
                                     s5.setVisible(false);
+                                    g.getChildren().add(d5);
                                     PauseTransition pt = new PauseTransition(Duration.seconds(5));
                                     pt.setOnFinished(e -> 
                                     {
                                         s5.setVisible(true);
+                                        d5.setVisible(false);
                                     }
                                     );
                                     pt.play();
