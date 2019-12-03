@@ -36,6 +36,7 @@ class Sun
     }
     public void removeImage()
     {
+        p.setSun(p.getSun()+50);
         s.getChildren().remove(pimgv);
         g.getChildren().remove(s);
     }
